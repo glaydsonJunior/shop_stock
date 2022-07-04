@@ -19,3 +19,15 @@
  </p>
  <p>POST</p>
  <h3><li>/del_product:</li></h3>
+<p>delete a product using parameter name, /del_product?name=name</p>
+<p>DELETE</p>
+<h3><li>/market:</li></h3>
+<p>increase or decrease the value of stock, json request:</p>
+<p>
+  {
+	"action":"buy or sell",
+	"name":"name of the product",
+	"quantity":quantity you will add or subtract from stock, if action is buy will add otherwise if the function is to sell it will subtract
+}
+ </p>
+ <p>PUT</p>
