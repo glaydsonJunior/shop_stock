@@ -9,7 +9,7 @@
 <p>filter by the first letters in the name parameter, /search?name=letters</p>
 <p>GET</p>
 <h3><li>/add_product:</li></h3>
-<p>add a product in the table by json:</p>
+<p>add a product in the table, json request:</p>
 <p>
   {
 	"name":"name",
