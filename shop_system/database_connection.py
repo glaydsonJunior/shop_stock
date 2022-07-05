@@ -27,7 +27,7 @@ class Crud_psql:
     #Ver todos os produtos
     def ver_produtos(self):
         try:
-            with psycopg2.connect(f'dbname=ShopDatabase user=postgres password=tscwindows host=localhost port=5432') as banco:
+            with psycopg2.connect(f'dbname={self.database} user={self.username} password={self.password} host={self.host} port={self.port}') as banco:
                 comandos = banco.cursor()
                 comandos.execute(f'SELECT * FROM produtos')
                 viwer = comandos.fetchall()
