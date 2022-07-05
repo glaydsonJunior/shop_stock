@@ -30,7 +30,7 @@ def search():
 def add():
     receive_json = request.get_json()
     tabela.add_produto(receive_json["name"],receive_json["price"],receive_json["stock"])
-    return jsonify(recebido)
+    return jsonify(receive_json)
 
 @app.route('/del_product', methods=['DELETE'])
 def deletar():
